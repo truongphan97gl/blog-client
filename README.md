@@ -1,8 +1,7 @@
 # Llama Blogging Platform
-Front-end [ [Repo](https://github.com/the-llamas/Front-End---Blog) / [Deployed](https://the-llamas.github.io/Front-End---Blog) ]
+Front-end [ [Repo](https://github.com/truongphan97gl/blog-client) / [Deployed](https://truongphan97gl.github.io/blog-client/) ]
 
-Back-end [ [Repo](https://github.com/the-llamas/blog-api) / [Deployed](https://blog-api-back-end.herokuapp.com) ]
-​
+Back-end [ [Repo](https://github.com/truongphan97gl/blog-api) / [Deployed](https://quiet-bastion-59588.herokuapp.com/) ]
 ## Summary
 This is a blogging plaform for blogging about llamas!
 Users can view posts, create posts, and interact by adding comments to any users posts
