@@ -35,6 +35,8 @@ const signInSuccess = responseData => {
   $('#sign-out').show()
   $('#sign-in').hide()
   $('#sign-up').hide()
+  $('#guestLogin').hide()
+
   $('#modalButton').text('Change-Password/Sign-Out')
   $('#exampleModalLabel').text('Change-Password/Sign-Out')
   $('.myModal').modal('hide')
@@ -47,6 +49,7 @@ const signInSuccess = responseData => {
   $('#posts').show()
   $('#create-post').show()
   $('#new-post').show()
+
   store.user = responseData.user
   successMessage('You signed in successfully!')
   hideMessaging()
@@ -64,6 +67,8 @@ const signOutSuccess = responseData => {
   $('#sign-out').hide()
   $('#sign-in').show()
   $('#sign-up').show()
+  $('#guestLogin').show()
+
   $('#new-post').hide()
   store.user = {}
   store.user._id = '888'

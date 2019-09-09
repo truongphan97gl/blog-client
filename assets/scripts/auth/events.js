@@ -16,7 +16,20 @@ const onSignUp = event => {
         .catch(ui.signInFailure)
     })
     .catch(ui.signUpFailure)
-
+}
+const onGuestLogin = event => {
+  event.preventDefault()
+  const formData = {
+    credentials:
+    {
+      email: 'c@c',
+      password: 'c'
+    }
+  }
+  api.signIn(formData)
+    .then(ui.signInSuccess)
+    .then(blogEvents.onGetPosts)
+    .catch(ui.signInFailure)
 }
 const onSignIn = event => {
   event.preventDefault()
@@ -48,5 +61,6 @@ module.exports = {
   onSignIn,
   onSignUp,
   onSignOut,
-  onChangePassword
+  onChangePassword,
+  onGuestLogin
 }

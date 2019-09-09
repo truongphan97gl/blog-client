@@ -24,6 +24,8 @@ $(() => {
   $('#new-post').hide()
   // $('#index-posts').on('submit', blogEvents.onGetPosts)
   // $('#show-post').on('submit', blogEvents.onShowPost)
+  $('#guestLogin').on('click', authEvents.onGuestLogin)
+
   $('#update-post').on('submit', blogEvents.onUpdatePost)
   $('#create-post').on('submit', blogEvents.onCreatePost)
   $('#create-comment').on('submit', blogEvents.onCreateComment)
